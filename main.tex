@@ -1,0 +1,165 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a modified ONE COLUMN version of
+% the following template:
+% 
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{enumitem}
+\pagestyle{empty}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Charles} {Jae Yeun Yoon}{
+\href{mailto:jyy24@cam.ac.uk}{jyy24@cam.ac.uk} \textbullet{} +44 7984 962272 \textbullet{} +1 (413) 588-2544
+}
+
+\section{Education}
+\runsubsection{University of Cambridge}
+\descript{BA Hons in Computer Science}
+\location{Oct 2016 - Jun 2019 \textbullet{} King's College, Cambridge}
+\sectionsep
+
+\runsubsection{Northfield Mount Hermon School} \\
+\location{Sep 2012 - May 2016 \textbullet{} Mount Hermon, Massachusetts \textbullet{} Cum Laude Society}
+\sectionsep
+
+\section{Experience}
+
+\runsubsection{The King's Affair}
+\descript{Ticketing \& IT Officer}
+\location{ Jun 2017 – Jun 2018 \textbullet{} Cambridge, United Kingdom \textbullet{} http://kingsaffair.com}
+\vspace{\topsep}
+\begin{tightemize}
+\item Wrote custom validation system for the Cambridge Raven authentication and College verification in Python and Flask.
+\item Wrote the \href{http://kingsaffair.com/2018}{landing page} based on Bootstrap and jQuery.
+\item Wrote a custom gate entrance system with Python and SQLAlchemy for guest management and NFC tickets.
+\item Wrote and signed various contracts with external companies for organisation of the event.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Money \& Co.}
+\descript{Software Engineering Intern}
+\location{Jul 2017 – Aug 2017 \textbullet{} London, United Kingdom}
+\vspace{\topsep}
+\begin{tightemize}
+\item Worked as the only service maintainer and developer for the P2P lending startup.
+\item Updated and Refactored an old codebase of significant size (>3.3GiB) written in Java Enterprise (J2EE).
+\item Rewrote the GNU make based system to Gradle, and updated all legacy codes to current versions of Wildfly and JDK.
+\item Maintained a cluster of Rackspace servers for deployment and service.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Magic Eco}
+\descript{Software Engineering Intern}
+\location{Jun 2015 – Aug 2015, Jun 2016 - Aug 2016 \textbullet{} Seoul, South Korea}
+\begin{tightemize}
+\item Worked on the centralised authentication service for various products, using OAuth2 protocol and JWT.
+\item Wrote the web \& server application in for various Internet of Things product, including LumiSmart and Gaze Desk.
+\item Authentication system was written in Python and Flask, IoT applications were written in Node.JS and AngularJS.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Part 1B Group Project}
+\descript{University of Cambridge, B.I. Simulations}
+\location{Jan 2018 – Mar 2018 \textbullet{} Cambridge, United Kingdom}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Worked on a group project commissioned by an industry partner with six other Computer Science students at Cambridge. Our project was to write an application that can capture videos from smartphone cameras, and recreate them realistically on a virtual world.
+\item Negotiated and communicated with a real client, adjusting goals and minimising risks for the project.
+\item Worked on stereoscopic image processing using OpenCV, and wrote HTML5 based synchronous video capturing application for multiple smartphones.
+\item Integrated various parts written by colleagues using Socket.IO. 
+\end{tightemize}
+\sectionsep
+
+
+\section{Additional Information}
+\begin{minipage}[t]{.45\textwidth}
+\subsection{Other Activities}
+\begin{itemize}[noitemsep]
+\item IT Officer, Cambridge University Korean Society
+\item Bass, King's Voices
+\item King's College Boat Club
+\end{itemize}
+\subsection{Citizenship Status}
+Citizen of South Korea \textbullet{} US Permanent Resident
+\sectionsep
+\subsection{Spoken \& Written Language}
+\location{Native fluency:} English, Korean
+\sectionsep
+\end{minipage}
+\hfill
+\begin{minipage}[t]{.45\textwidth}
+\subsection{Programming Language}
+\location{Over 10000 lines:}
+Java \textbullet{} Python \textbullet{} JavaScript \textbullet{} HTML/CSS \textbullet{}  \LaTeX\ \\ 
+\location{Familiar:}
+C \textbullet{} SQL \textbullet{} Bash \textbullet{} MATLAB \textbullet{} OCaml
+\sectionsep
+\subsection{References}
+\location{Timothy Griffin (Director of Studies)}
+\href{mailto:Timothy.Griffin@cl.cam.ac.uk}{Timothy.Griffin@cl.cam.ac.uk} \textbullet{} +44 1223 334431 \\
+\location{Nicola Horlick (CEO of Money\&Co.)}
+\href{mailto:nhorlick@moneyandco.com}{nhorlick@moneyandco.com} 
+\sectionsep
+\end{minipage}
+
+\end{document}  
+\documentclass[]{article}
